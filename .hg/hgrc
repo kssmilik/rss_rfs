@@ -1,0 +1,6 @@
+[paths]
+default=https://bitbucket.org/kssmilik/rss-feeds-read-system
+[ui]
+# Name data to appear in commits
+username = Kate Kasinskaya <kasinskayaKate@gmail.com>
+ssh = ssh -C

@@ -1,0 +1,42 @@
+class Feed < ActiveRecord::Base
+  attr_accessible :favourite, :guid, :name, :published_at, :summary, :url, :title
+  belongs_to :channel
+  has_many :comments, :dependent => :destroy
+
+  require 'feedzirra'
+
+  scope :favourite , lambda{ |current_user| where(:favourite => true, :channel_id => current_user.channel_ids)}
+
+  # define_index do
+  #   indexes :title, :sortable => true
+  #   indexes :summary, :sortable => true
+
+  #   has published_at
+  #   has channel_id
+
+  #   set_property :delta => true
+  # end
+
+  def self.update_from_feed(feed_url)
+    feed = Feedzirra::Feed.fetch_and_parse(feed_url)
+    feed.title = Feedzirra::Feed.fetch_and_parse(feed_url).title
+    add_entries(feed.entries)
+  end
+
+  private
+  def self.add_entries(entries)
+    entries.each do |entry|
+      unless exists? :guid => entry.id
+        create!(
+            :name         => entry.title,
+            :summary      => entry.summary,
+            :url          => entry.url,
+            :published_at => entry.published,
+            :guid         => entry.id,
+            :favourite    => false
+        )
+      end
+    end
+  end
+
+end

@@ -1,0 +1,27 @@
+.row
+  .span10.offset2
+    %section#deviseauth
+      #local.box
+        .span5
+          %p.lead By email:
+          .gray_block
+            .form-horizontal
+              = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+                .control-group
+                  = f.label :email, class: 'control-label'
+                  .controls
+                    = f.email_field :email, class: 'styled-input'
+                .control-group
+                  = f.label :password, class: 'control-label'
+                  .controls
+                    = f.password_field :password, class: 'styled-input'
+                .control-group
+                  - if devise_mapping.rememberable?
+                    .controls
+                      .checkbox
+                        = f.label :remember_me do
+                          = f.check_box :remember_me
+                          Remember me
+                  = f.submit "Sign in", class: 'btn offset3 btn-danger'
+
+        = render :partial => "devise/shared/social"

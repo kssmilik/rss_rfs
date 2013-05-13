@@ -1,0 +1,47 @@
+.row
+  .span10.offset2
+    %section#deviseauth
+      #local.box
+        .span5
+          %p.lead By email:
+          .gray_block
+            .form-horizontal
+              = form_for(resource, as: resource_name, url: registration_path(resource_name, validate: true )) do |f|
+                .control-group
+                  = f.hidden_field :profile, value: "basic"
+                  = f.label :first_name, class: 'control-label'
+                  .controls
+                    = f.text_field :first_name, class: 'styled-input'
+                .control-group
+                  = f.label :last_name, class: 'control-label'
+                  .controls
+                    = f.text_field :last_name, class: 'styled-input'
+                .control-group
+                  = f.label :login, 'Nick', class: 'control-label'
+                  .controls
+                    = f.text_field :login, class: 'styled-input'
+                .control-group
+                  = f.label :email, class: 'control-label'
+                  .controls
+                    = f.email_field :email, class: 'styled-input', autocomplete: 'off'
+                .control-group
+                  = f.label :password, class: 'control-label', autocomplete: 'off'
+                  .controls
+                    = f.password_field :password, class: 'styled-input'
+                .control-group
+                  = f.label :password_confirmation, class: 'control-label'
+                  .controls
+                    = f.password_field :password_confirmation, class: 'styled-input'
+                .control-group
+                  = f.label :role, class: 'control-label'
+                  .controls
+                    - for role in User::ROLES
+                      = radio_button_tag "user[roles][]", role, @user.roles.include?(role)
+                      = role.humanize
+                      %br
+                    = hidden_field_tag "user[roles][]", ""
+
+                  = f.submit "Sign Up", class: 'btn offset3 btn-danger'
+
+        = render :partial => "devise/shared/social"
+

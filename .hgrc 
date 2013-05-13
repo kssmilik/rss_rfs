@@ -1,0 +1,4 @@
+[ui]
+# Name data to appear in commits
+username = Kate Kasinskaya <kasinskayakate@gmail.com>
+ssh = ssh -C

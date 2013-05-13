@@ -1,0 +1,27 @@
+.row
+  .span10.offset2
+    %section#deviseauth
+      #local.box
+        .span5
+          %p.lead Resend confirmation email:
+          .gray_block
+            .form-horizontal
+              = form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+                .control-group
+                  = f.label :email, class: 'control-label'
+                  .controls
+                    = f.email_field :email, class: 'styled-input'
+                .control-group
+                  = f.label :password, class: 'control-label'
+                  .controls
+                    = f.password_field :password, class: 'styled-input'
+                .control-group
+                  = f.label :password_confirmation, class: 'control-label'
+                  .controls
+                    = f.password_field :password_confirmation, class: 'styled-input'
+                  %br
+                  = f.submit "Resend", class: 'btn offset3'
+      .span3
+        %p.lead Other ways:
+        .gray_block
+          = render :partial => "devise/shared/links"

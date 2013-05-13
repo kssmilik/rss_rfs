@@ -1,0 +1,14 @@
+.channels_list_block.helvetica_font
+  %ul.nav.nav-list
+    -if can? :create, Channel
+      = link_to "Add channel", new_channel_path, class: 'btn btn-danger btn-red'
+    -if can? :edit,   Channel
+      = link_to "Edit channel", new_channel_path, class: 'btn pull-right'
+    %hr
+    My Channels
+    %hr
+    - channels.each do |channel|
+      %li
+        = link_to channel.name, channel
+    %hr
+

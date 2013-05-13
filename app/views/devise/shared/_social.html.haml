@@ -1,0 +1,12 @@
+.span3
+  %p.lead By social:
+  .gray_block
+    #remote
+      .services.box
+        = link_to '/auth/google' do
+          =image_tag "google_64.png", size: "64x64", alt: "Google"
+        =link_to "/auth/twitter" do
+          =image_tag "twitter_64.png", size: "64x64", alt: "Twitter"
+    %br
+    #devise_links
+      = render partial: "devise/shared/links"

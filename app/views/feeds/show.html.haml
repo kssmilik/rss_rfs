@@ -1,0 +1,30 @@
+.row
+  .span12
+    .span3
+      = render partial: 'channels/channels_nav', locals: {channels: @channels}
+
+    .span8.helvetica_font.feeds
+      %p.helvetica_font.offset1
+        = @feed.channel.name
+      %ul
+        %li= render partial: 'feeds/feed', locals: {feed: @feed}
+
+        - if @feed.comments.any?
+          .comments
+            %h4 Comments:
+            - @feed.comments.each do |comment|
+              %blockquote
+                - if current_user
+                  = link_to "x", [comment.feed, comment], :method=>:delete, :class=>:destroy, :onclick => "return confirm('Are you sure?')", class: 'btn btn-mini btn-inverse pull-right'
+                %p= comment.body
+                %small
+                  = comment.user.first_name
+                  = comment.created_at.strftime('at %H:%M/ %m-%d-%Y')
+
+        %p.helvetica_font
+          New comment
+        = form_for([@feed, @feed.comments.build]) do |f|
+          = f.hidden_field :user_id, value: current_user.id
+          = f.text_area :body, class: 'comment_field'
+
+          = f.submit class: 'btn'

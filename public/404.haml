@@ -1,0 +1,24 @@
+%head
+  %meta{:charset => "utf-8"}
+    %title Our First HTML5 Page
+    %meta{:content => "Welcome to my basic template.", :name => "description"}
+      %link{:href => "css/style.css?v=1", :rel => "stylesheet"}
+%body
+  #wrapper
+    %header
+      %h1 Welcome, one and all!
+      %nav
+        %ul
+          %li
+            %a{:href => "#", :rel => "external"} Home
+          %li
+            %a{:href => "#", :rel => "external"} About us
+          %li
+            %a{:href => "#", :rel => "external"} Contacts
+    #core.clearfix
+      %section#left
+        %p some content here.
+      %section#right
+        %p but some here as well!
+    %footer
+      %p Some copyright and legal notices here. Maybe use the © symbol a bit.

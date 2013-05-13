@@ -1,0 +1,17 @@
+/*--------- errors ---------*/
+
+.field_with_errors {
+    display: inline;
+}
+.field_with_errors input{
+    margin-top: 15px;
+    border: 1px red solid;
+}
+
+.field_with_errors .message {
+    color: black;
+    padding-left: 5px;
+    font-size: 11px;
+    margin-top: -55px;
+    float: left;
+}

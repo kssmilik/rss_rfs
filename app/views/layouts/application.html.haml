@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title RSS Feeds Read System
+    %meta{:charset => "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    = stylesheet_link_tag :application, :media => "all"
+    = javascript_include_tag :application, "jquery-1.7.2.min"
+    = javascript_include_tag "rails.validations"
+    = csrf_meta_tags
+  %body
+    .row
+      #wrapper
+        .span12
+          #logo
+            .offset
+              .helvetica_neue_font
+                %p.lead
+                  = link_to "RSS Feeds Read System", root_path, class: 'brand'
+          = render 'layouts/navigation'
+          = render 'layouts/messages'
+    .row
+      .span12
+        #main{:role => "main"}
+          = yield
+        %footer

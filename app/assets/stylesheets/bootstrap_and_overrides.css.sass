@@ -1,0 +1,245 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+@import 'colors'
+@import 'flash'
+@import 'views/channels/index'
+
+.offset
+  margin-left: 72px
+
+/*--------- primary ---------*/
+html
+  max-width: 1280px
+  font-family: Tahoma
+  margin: 0px
+  padding: 0px
+  font-weight: 100
+  width: 100%
+
+body
+  font-family: Tahoma
+  margin: 0px
+  padding: 0px
+  background-image: url('back.png')
+  background-color: #E8E8E8
+  font-size: 1.1em
+
+.brand
+  float:  left
+  display: block
+
+a
+  color: black
+  /*font-size: 0.9em*/
+
+
+.styled-input
+  border: inset 2px
+  background-image: url('back.png')
+
+
+label
+  font-family: arial
+  font-size: 0.9em
+
+
+/*--------- header ---------*/
+
+#wrapper
+  display: block
+  height: 70px
+  background-color: #FFFFFF
+  margin: 0px
+  padding: 10px
+  border-bottom: dashed 1px #E8E8E8
+
+
+.small_avatar
+  background-image: url('no_avatar.png')
+  vertical-align: middle
+  width: 40px
+  height: 40px
+  border-radius: 8px
+  -moz-border-radius: 8px
+  -webkit-border-radius: 8px
+  border: 1px soliid #FFFFFF
+
+
+/*--------- body ---------*/
+
+
+#main
+  margin: 30px 45px 30px 40px
+  height: 700px
+
+#radio_buttons
+  list-style: none
+  margin-left: -25px
+
+
+#radio_buttons li
+  float: left
+  margin-right: 25px
+  width: 40px
+
+
+#radio_buttons li
+  text-align: center
+
+
+.oauth_providers
+  position:r elative
+  width: auto
+  text-align: center
+  padding: 15px 0px 15px 0px
+
+
+.oauth_provider
+  position:relative
+  width:  80px
+  margin: 0px 30px 0px 30px
+  text-align: center
+
+.oauth_provider input
+  position: relative
+  font-size: 1em
+  margin-bottom: 16px
+  display: block
+  margin: auto
+
+.oauth_provider img
+  position: relative
+  margin-top: -5px
+
+.services
+  margin-top: 15px
+
+.services a, a:hover
+  text-decoration: none
+
+#content
+  position:relative
+  margin-top: 30px
+  margin-left: 30px
+
+.feeds
+  font-size: 0.9em
+
+  ul
+    list-style: none
+
+  li
+    padding: 20px
+    padding-bottom: 40px
+    webkit-border-radius: 5px
+    border-radius: 5px
+    background: rgba(255, 255, 255, 0.3)
+    margin-bottom: 20px
+
+
+.comment_field
+  padding: 20px
+  width: 700px
+  height: 60px
+
+
+.all_channels_list
+  ul
+    display: block
+    list-style: none
+
+  li
+    background-color: #E8E8E8
+    display: block
+    font-size: 0.8em
+
+    p
+      float: left
+
+#channels_list li
+  font-size: 0.9em
+
+
+#channels_list input
+  background-color: #F0F3FA
+  color: #3299BB
+  font-size: 0.8em
+  width: 60px
+
+
+#footer-container
+  display: block
+  width: 100%
+  height: 70px
+  background-color: #F0F3FA
+  position:relative
+  top: 700px
+
+
+.gray_block
+  display: block
+  background-color: rgba(0, 0, 0, 0.1)
+  border: 1px dashed #BCBCBC
+  padding: 40px 30px 10px 30px
+
+.helvetica_neue_font
+  font-family: Helvetica Neue
+
+.helvetica_font
+  font-family: Helvetica
+
+.channels_list_block
+  margin-top: 50px
+
+  ul
+    list-style: none
+  li
+    margin-top: 7px
+    font-size: 0.8em
+    text-decoration: underline
+
+.btn-red
+  background: rgba(252, 9, 9, 0.70)
+
+.float_left
+  display: block
+  float: left
+
+.float_right
+  display: block
+  float: right
+
+.pagination
+  font-size: 0.8em
+  a, span, .current
+    background-color: rgba(255, 255, 255, 0.70)
+
+    border-radius: 6px
+    -moz-border-radius: 6px
+    -webkit-border-radius: 6px
+    -webkit-box-shadow: 0px 0px 5px #b7b4b4
+    -moz-box-shadow:    0px 0px 5px #b7b4b4
+    box-shadow:         0px 0px 5px #b7b4b4
+    padding: 5px
+    font-size: 0.8em
+
+  .current, .disabled
+    background: #b7b4b4
+
+#flash_block
+  float: left
+
+#logo
+  float: left
+
+#sign_block
+  position: relative
+  float: right
+  display: block
+  margin-top: 25px

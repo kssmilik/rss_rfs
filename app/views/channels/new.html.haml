@@ -1,0 +1,29 @@
+.row
+	.span12
+		.span3
+			.gray_block
+				= form_for @channel do |f|
+					.field
+						= f.label :url, 'Enter rss url here:'
+						= f.text_field :url
+					= f.submit "Create Channel", class: 'btn'
+		.span1
+		.span6.gray_block
+			%ul.all_channels_list
+				- if @channels
+					%p.helvetica_font
+						Available channels:
+					%hr
+					- @channels.each do |channel|
+						%li.helvetica_font
+							%p
+								= channel.name.first(50)
+
+							-if !current_user.channels.include?(channel)
+								= button_to "Add", add_channel_to_user_path(channel), method: :put, class: 'btn btn-mini btn-info pull-right'
+							-else
+								= button_to "Remove", add_channel_to_user_path(channel), method: :put, class: 'btn btn-mini btn-danger button-red pull-right'
+						%br
+					%hr
+					.helvetica_font
+						= will_paginate @channels

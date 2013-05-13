@@ -1,0 +1,15 @@
+.row
+  .span9.offset2
+    = render partial: 'add_channel_button'
+    - @channels.each do |channel|
+      = link_to channel do
+        .span2.channel.text-center
+          %span
+            = channel.name.split(' ')[0..5]*(' ')
+
+
+
+
+
+
+

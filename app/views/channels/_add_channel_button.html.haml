@@ -1,0 +1,10 @@
+- if can? :create, Channel
+  = link_to new_channel_path do
+    .channel.add
+      %span
+        Add channel
+- else
+  = link_to edit_user_registration_path do
+    .channel.add
+      %span
+        Update account

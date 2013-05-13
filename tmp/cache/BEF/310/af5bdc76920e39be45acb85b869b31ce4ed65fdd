@@ -1,0 +1,320 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1365979732.2358348:@value"l[I"^@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled bootstrap_and_overrides.css will not
+//       have the proper paths. So for now we use the absolute path.
+@fontAwesomeEotPath: asset-path("fontawesome-webfont.eot?v=3.0.2");
+@fontAwesomeEotPath_iefix: asset-path("fontawesome-webfont.eot?#iefix&v=3.0.2");
+@fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff?v=3.0.2");
+@fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf?v=3.0.2");
+
+// Font Awesome
+@import "fontawesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+/*--------- primary ---------*/
+html
+  font-family: Tahoma
+  background-image: url('back.png')
+  background-color: #E8E8E8
+  margin: 0px
+  padding: 0px
+  font-weight: 100
+  width: 100%
+
+body
+  margin: 0px
+  padding: 0px
+
+
+nav
+  float:right
+  display: block
+
+  ul
+    list-style: none
+    position: absolute
+    right: 50px
+    top: 15px
+
+
+  li
+    float: left
+    margin-left: 15px
+    line-height: 30px
+
+
+  a
+    font-size: 11pt
+    color: #969696
+    text-decoration: underlined
+
+
+  a:hover
+    color: black
+
+
+  a:visited
+    color: #969696
+
+
+
+a
+  color: black
+  font-size: 0.9em
+
+
+input
+  height: 25px
+  font-size: 11pt
+  padding: 2px
+  //border-image: initial
+  border: inset 2px
+  background-image: url('back.png')
+  margin-top: 2px
+  margin-bottom: 10px
+
+
+label
+  font-family: arial
+  font-size: 0.9em
+
+
+/*--------- header ---------*/
+
+#wrapper
+  display: block
+  width: 100%
+  height: 70px
+  background-color: #FFFFFF
+  margin: 0px
+  padding: 10px
+  border-bottom: dashed 1px #E8E8E8
+
+
+#wrapper h3
+  margin-left: 20px
+  font-weight: 100
+
+
+.brand a
+  font-size: 11pt
+  color: black
+  padding: 15px 30px 15px 10px
+  text-decoration: none
+  font-size: 1.3em
+
+
+.small_avatar
+  background-image: url('no_avatar.png')
+  vertical-align: middle
+  width: 30px
+  height: 30px
+  border-radius: 8px
+  -moz-border-radius: 8px
+  -webkit-border-radius: 8px
+  border: 1px soliid #FFFFFF
+
+
+/*--------- body ---------*/
+
+
+#main
+  margin: 30px 45px 30px 40px
+  height: 700px
+
+
+.field-check_box label
+  font-size: 1.0em
+  font-family: arial
+  color: #5E5C5C
+
+
+#user_remember_me
+  position: relative
+  top: 8px
+
+
+.actions input
+  background-color: #D12806
+  color: #ffffff
+  padding: 5px 10px 5px 10px
+  border: none
+  font-family: Tahoma
+  font-size: 11pt
+  float: right
+
+.like_button a
+  background-color: #D12806
+  color: black
+  padding: 5px 10px 5px 10px
+  border: none
+  font-family: Tahoma
+  font-size: 11pt
+  text-decoration: none
+
+
+#radio_buttons
+  list-style: none
+  margin-left: -25px
+
+
+#radio_buttons li
+  float: left
+  margin-right: 25px
+  width: 40px
+
+
+#radio_buttons li
+  text-align: center
+
+
+.oauth_providers
+  position:r elative
+  width: auto
+  text-align: center
+  padding: 15px 0px 15px 0px
+
+
+.oauth_provider
+  position:relative
+  width:  80px
+  margin: 0px 30px 0px 30px
+  text-align: center
+
+.oauth_provider input
+  position: relative
+  font-size: 1em
+  margin-bottom: 16px
+  display: block
+  margin: auto
+
+.oauth_provider img
+  position: relative
+  margin-top: -5px
+
+
+#services
+  margin-top: 20px
+
+
+.services a
+  text-decoration: none
+
+
+#content
+  position:relative
+  margin-top: 30px
+  margin-left: 30px
+
+#channels_nav
+  width: 200px
+  float:left
+  height: 100%
+
+#feeds_container
+  float:right
+  display: block
+  position: relative
+  width: 700px
+  right: 200px
+
+#feeds_container ul
+  display: block
+  list-style:none
+  width: 700px
+  padding-left: 0
+
+#feeds_container a
+  font-size: 12pt
+
+
+#feeds_container .like_button
+  float: right
+  margin-left: 20px
+
+
+#feeds_container .like_button a
+  background-color: window
+  color: #3299BB
+  font-size: 0.8em
+
+
+.feeds ul
+  width: 700px
+  display: block
+
+
+.feeds li, .comment
+  padding: 20px
+  webkit-border-radius: 2px
+  border-radius: 2px
+  background: rgba(255, 255, 255, 0.3)
+  width: 700px
+  margin-bottom: 20px
+
+
+.comment_field
+  padding: 20px
+  width: 700px
+  height: 60px
+
+
+#channels_list li p
+  font-size: 0.9em
+  display: inline
+
+
+#channels_list li
+  font-size: 0.9em
+
+
+#channels_list input
+  background-color: #F0F3FA
+  color: #3299BB
+  font-size: 0.8em
+  width: 60px
+
+/*--------- footer ---------*/
+
+#footer-container
+  display: block
+  width: 100%
+  height: 70px
+  background-color: #F0F3FA
+  position:relative
+  top: 700px
+
+
+#form-container
+  position: relative
+  top: 20px
+  left: 90px
+  display: block
+  width: 880px
+  background-color: rgba(0, 0, 0, 0.1)
+  border: 1px dashed #BCBCBC
+  margin-right: 8%
+  margin-top: 2%
+  padding: 40px 30px 10px 30px
+
+
+:EF

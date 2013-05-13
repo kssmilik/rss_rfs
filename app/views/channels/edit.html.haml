@@ -1,0 +1,15 @@
+#form-container
+  = form_for @channel do |f|
+    .field
+      = f.label :url
+      %br/
+      = f.text_field :url
+    .field
+      = f.label :name
+      %br/
+      = f.text_field :name
+    .field_check_box
+      = f.check_box :favourite
+      = f.label :favourite
+    .actions
+      = f.submit "Save"

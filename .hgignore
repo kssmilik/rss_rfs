@@ -1,0 +1,19 @@
+syntax: glob
+
+tmp/
+tmp/pids/server.pid
+db/sphinx/
+.DS_Store
+.bundle/config
+.idea/workspace.xml
+public/images/
+public/system/avatars
+public/system/images
+public/system/medias
+public/system/users/
+public/static
+*.orig
+*.rej
+config/database.yml
+log/
+dump.rdb

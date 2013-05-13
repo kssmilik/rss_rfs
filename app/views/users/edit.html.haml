@@ -1,0 +1,9 @@
+#content
+  %p Add Channels
+  = form_for @user do |f|
+    .field
+      = Channel.all.each do |channel|
+        =check_box_tag :channel_ids, channel.id, @user.channels.include?(channel),:name => 'user[cchannel_ids][]'
+        = label_tag :channel_ids, company.id
+  .actions
+    = f.submit "Add Channels"

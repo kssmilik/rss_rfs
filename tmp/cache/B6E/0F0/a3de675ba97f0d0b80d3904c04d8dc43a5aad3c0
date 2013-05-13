@@ -1,0 +1,345 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1366149557.466625:@value"Ó[I"Å/* This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope. */
+/* style guide colors */
+/* primary colors */
+/* secondary colors */
+/* line 1, ../../app/assets/stylesheets/_flash.scss */
+.flash-message {
+  display: block;
+  position: absolute;
+  top: 30px;
+}
+
+/* line 1, ../../app/assets/stylesheets/views/channels/_index.css.scss */
+.channel {
+  display: block;
+  float: left;
+  width: 140px;
+  height: 138px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -webkit-box-shadow: 0px 0px 5px #b7b4b4;
+  -moz-box-shadow: 0px 0px 5px #b7b4b4;
+  box-shadow: 0px 0px 5px #b7b4b4;
+  padding: 20px;
+}
+/* line 18, ../../app/assets/stylesheets/views/channels/_index.css.scss */
+.channel.add {
+  background-color: rgba(252, 9, 9, 0.7);
+  -webkit-box-shadow: 0px 0px 5px rgba(49, 50, 50, 0.49);
+  -moz-box-shadow: 0px 0px 5px rgba(49, 50, 50, 0.49);
+  box-shadow: 0px 0px 5px rgba(49, 50, 50, 0.49);
+  color: #FFFFFF;
+  font-size: 3em;
+  line-height: 1em;
+}
+/* line 28, ../../app/assets/stylesheets/views/channels/_index.css.scss */
+.channel span {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+}
+
+/*--------- primary --------- */
+/* line 16, ../../app/assets/stylesheets/application.css.sass */
+html {
+  font-family: Tahoma;
+  background-image: url("back.png");
+  background-color: #e8e8e8;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 100;
+  width: 100%;
+}
+
+/* line 25, ../../app/assets/stylesheets/application.css.sass */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 30, ../../app/assets/stylesheets/application.css.sass */
+nav {
+  display: block;
+}
+/* line 34, ../../app/assets/stylesheets/application.css.sass */
+nav ul {
+  list-style: none;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+}
+/* line 41, ../../app/assets/stylesheets/application.css.sass */
+nav li {
+  float: left;
+  margin-left: 15px;
+  line-height: 30px;
+}
+/* line 47, ../../app/assets/stylesheets/application.css.sass */
+nav a {
+  font-size: 11pt;
+  color: #969696;
+  text-decoration: underlined;
+}
+/* line 53, ../../app/assets/stylesheets/application.css.sass */
+nav a:hover {
+  color: black;
+}
+/* line 57, ../../app/assets/stylesheets/application.css.sass */
+nav a:visited {
+  color: #969696;
+}
+
+/* line 62, ../../app/assets/stylesheets/application.css.sass */
+a {
+  color: black;
+  font-size: 0.9em;
+}
+
+/* line 67, ../../app/assets/stylesheets/application.css.sass */
+label {
+  font-family: arial;
+  font-size: 0.9em;
+}
+
+/*--------- header --------- */
+/* line 74, ../../app/assets/stylesheets/application.css.sass */
+#wrapper {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  margin: 0px;
+  padding: 10px;
+  border-bottom: dashed 1px #e8e8e8;
+}
+
+/* line 84, ../../app/assets/stylesheets/application.css.sass */
+#wrapper h3 {
+  margin-left: 20px;
+  font-weight: 100;
+}
+
+/* line 89, ../../app/assets/stylesheets/application.css.sass */
+.brand a {
+  font-size: 11pt;
+  color: black;
+  padding: 15px 30px 15px 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+/* line 97, ../../app/assets/stylesheets/application.css.sass */
+.small_avatar {
+  background-image: url("no_avatar.png");
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: 1px soliid white;
+}
+
+/*--------- body --------- */
+/* line 111, ../../app/assets/stylesheets/application.css.sass */
+#main {
+  margin: 30px 45px 30px 40px;
+  height: 700px;
+}
+
+/* line 115, ../../app/assets/stylesheets/application.css.sass */
+.actions input {
+  background-color: #d12806;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  font-family: Tahoma;
+  font-size: 11pt;
+  float: right;
+}
+
+/* line 124, ../../app/assets/stylesheets/application.css.sass */
+.like_button a {
+  background-color: #d12806;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  font-family: Tahoma;
+  font-size: 11pt;
+  text-decoration: none;
+}
+
+/* line 134, ../../app/assets/stylesheets/application.css.sass */
+#radio_buttons {
+  list-style: none;
+  margin-left: -25px;
+}
+
+/* line 139, ../../app/assets/stylesheets/application.css.sass */
+#radio_buttons li {
+  float: left;
+  margin-right: 25px;
+  width: 40px;
+}
+
+/* line 145, ../../app/assets/stylesheets/application.css.sass */
+#radio_buttons li {
+  text-align: center;
+}
+
+/* line 149, ../../app/assets/stylesheets/application.css.sass */
+.oauth_providers {
+  width: auto;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+/* line 156, ../../app/assets/stylesheets/application.css.sass */
+.oauth_provider {
+  width: 80px;
+  margin: 0px 30px 0px 30px;
+  text-align: center;
+}
+
+/* line 162, ../../app/assets/stylesheets/application.css.sass */
+.oauth_provider input {
+  position: relative;
+  font-size: 1em;
+  margin-bottom: 16px;
+  display: block;
+  margin: auto;
+}
+
+/* line 169, ../../app/assets/stylesheets/application.css.sass */
+.oauth_provider img {
+  position: relative;
+  margin-top: -5px;
+}
+
+/* line 174, ../../app/assets/stylesheets/application.css.sass */
+#services {
+  margin-top: 20px;
+}
+
+/* line 178, ../../app/assets/stylesheets/application.css.sass */
+.services a {
+  text-decoration: none;
+}
+
+/* line 182, ../../app/assets/stylesheets/application.css.sass */
+#content {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* line 187, ../../app/assets/stylesheets/application.css.sass */
+#channels_nav {
+  width: 200px;
+  height: 100%;
+}
+
+/* line 192, ../../app/assets/stylesheets/application.css.sass */
+#feeds_container {
+  display: block;
+  position: relative;
+  width: 700px;
+  right: 200px;
+}
+
+/* line 199, ../../app/assets/stylesheets/application.css.sass */
+#feeds_container ul {
+  display: block;
+  width: 700px;
+  padding-left: 0;
+}
+
+/* line 205, ../../app/assets/stylesheets/application.css.sass */
+#feeds_container a {
+  font-size: 12pt;
+}
+
+/* line 209, ../../app/assets/stylesheets/application.css.sass */
+#feeds_container .like_button {
+  float: right;
+  margin-left: 20px;
+}
+
+/* line 214, ../../app/assets/stylesheets/application.css.sass */
+#feeds_container .like_button a {
+  background-color: window;
+  color: #3299bb;
+  font-size: 0.8em;
+}
+
+/* line 220, ../../app/assets/stylesheets/application.css.sass */
+.feeds ul {
+  width: 700px;
+  display: block;
+}
+
+/* line 225, ../../app/assets/stylesheets/application.css.sass */
+.feeds li, .comment {
+  padding: 20px;
+  webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+/* line 234, ../../app/assets/stylesheets/application.css.sass */
+.comment_field {
+  padding: 20px;
+  width: 700px;
+  height: 60px;
+}
+
+/* line 240, ../../app/assets/stylesheets/application.css.sass */
+#channels_list li p {
+  font-size: 0.9em;
+  display: inline;
+}
+
+/* line 245, ../../app/assets/stylesheets/application.css.sass */
+#channels_list li {
+  font-size: 0.9em;
+}
+
+/* line 249, ../../app/assets/stylesheets/application.css.sass */
+#channels_list input {
+  background-color: #f0f3fa;
+  color: #3299bb;
+  font-size: 0.8em;
+  width: 60px;
+}
+
+/*--------- footer --------- */
+/* line 257, ../../app/assets/stylesheets/application.css.sass */
+#footer-container {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background-color: #f0f3fa;
+  top: 700px;
+}
+
+/* line 266, ../../app/assets/stylesheets/application.css.sass */
+#form-container {
+  position: relative;
+  top: 20px;
+  left: 90px;
+  display: block;
+  width: 880px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px dashed #bcbcbc;
+  margin-right: 8%;
+  margin-top: 2%;
+  padding: 40px 30px 10px 30px;
+}
+:EF

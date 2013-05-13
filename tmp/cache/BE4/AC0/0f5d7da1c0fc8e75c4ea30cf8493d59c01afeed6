@@ -1,0 +1,21 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1365711724.012552:@value"È[I"º/*--------- errors ---------*/
+/* line 4, ../../app/assets/stylesheets/_errors.scss */
+.field_with_errors {
+  display: inline;
+}
+
+/* line 7, ../../app/assets/stylesheets/_errors.scss */
+.field_with_errors input {
+  margin-top: 15px;
+  border: 1px red solid;
+}
+
+/* line 12, ../../app/assets/stylesheets/_errors.scss */
+.field_with_errors .message {
+  color: black;
+  padding-left: 5px;
+  font-size: 11px;
+  margin-top: -55px;
+  float: left;
+}
+:EF

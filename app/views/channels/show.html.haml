@@ -1,0 +1,22 @@
+.row
+  .span12
+    .span3
+      = render partial: 'channels/channels_nav', locals: {channels: @channels}
+
+    .span8
+      .feeds.helvetica_font
+        %p.lead.helvetica_font.offset1
+          = @channel.name
+        / -cache(@channel, :controller => "channels", :action => "show" ) do
+        / .like_button
+        /   = link_to 'Edit Channel', edit_channel_path
+
+        %ul
+          - @feeds.each do |feed|
+            %li= render partial: 'feeds/feed', locals: {feed: feed}
+
+          %hr
+          .helvetica_font
+            = will_paginate @feeds
+
+

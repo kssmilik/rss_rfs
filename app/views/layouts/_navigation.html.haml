@@ -1,0 +1,13 @@
+#sign_block
+  .nav.pull-right
+    - if user_signed_in?
+      .helvetica_neue_font
+        = image_tag current_user.avatar.url(:thumb), class: "small_avatar"
+        = link_to 'Settings', edit_user_registration_path
+        |
+        = link_to 'Sign out', destroy_user_session_path, :method=>'delete'
+    - else
+      .helvetica_neue_font
+        = link_to 'Sign in', new_user_session_path
+        |
+        = link_to 'Sign up', new_user_registration_path
