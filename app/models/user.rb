@@ -1,16 +1,18 @@
 class User < ActiveRecord::Base
+
   attr_accessible :first_name, :last_name, :login, :email, :password,
-                  :password_confirmation, :remember_me, :confirmed_at, :avatar, :profile , :haslocalpw , :roles, :role, :roles_mask
+                  :password_confirmation, :remember_me, :confirmed_at, :avatar,
+                  :profile , :haslocalpw , :roles, :role, :roles_mask
 
   validates_uniqueness_of :login, :email , :case_sensitive => false
   validates :email, :email_format => true
-  validates_presence_of :first_name, :last_name, :email#, :password, :password_confirmation
+  validates_presence_of :first_name, :last_name, :email, :password, :password_confirmation
   validates_length_of :first_name, :last_name,
                       :minimum => 1,
                       :maximum => 50
 
   devise :database_authenticatable,  :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable#, :confirmable
 
   has_many :services, :dependent => :destroy
   has_and_belongs_to_many :channels
