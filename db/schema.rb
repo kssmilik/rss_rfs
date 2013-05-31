@@ -11,17 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120622093714) do
+ActiveRecord::Schema.define(:version => 20130529153624) do
+
+  create_table "channel_categories", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "channel_id"
+  end
 
   create_table "channels", :force => true do |t|
     t.string   "name"
     t.text     "summary"
     t.string   "url"
     t.boolean  "favourite"
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.integer  "limit",      :default => 10
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
+    t.integer  "limit",               :default => 10
     t.integer  "user_id"
+    t.integer  "channel_category_id"
   end
 
   create_table "channels_users", :id => false, :force => true do |t|
@@ -49,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20120622093714) do
     t.datetime "updated_at",                      :null => false
     t.string   "title"
     t.boolean  "delta",        :default => true,  :null => false
+    t.integer  "likes",        :default => 0
   end
 
   create_table "roles", :force => true do |t|

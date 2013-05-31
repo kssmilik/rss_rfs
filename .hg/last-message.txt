@@ -1,1 +1,1 @@
-redisign
+Automated merge with https://bitbucket.org/kssmilik/rss-feeds-read-system

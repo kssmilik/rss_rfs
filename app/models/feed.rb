@@ -1,11 +1,11 @@
 class Feed < ActiveRecord::Base
-  attr_accessible :favourite, :guid, :name, :published_at, :summary, :url, :title
+  attr_accessible :favourite, :guid, :name, :published_at, :summary, :url, :title, :likes
   belongs_to :channel
   has_many :comments, :dependent => :destroy
 
   require 'feedzirra'
 
-  scope :favourite , lambda{ |current_user| where(:favourite => true, :channel_id => current_user.channel_ids)}
+  # scope :favourite , lambda{ |current_user| where(:favourite => true, :channel_id => current_user.channel_ids)}
 
   # define_index do
   #   indexes :title, :sortable => true
@@ -33,7 +33,8 @@ class Feed < ActiveRecord::Base
             :url          => entry.url,
             :published_at => entry.published,
             :guid         => entry.id,
-            :favourite    => false
+            :favourite    => false,
+            :likes        => 0
         )
       end
     end

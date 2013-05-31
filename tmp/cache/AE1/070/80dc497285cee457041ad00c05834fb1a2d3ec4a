@@ -1,10 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1365711909.774493:@value"²[I"¥(function() {
-
-  jQuery(function() {
-    $("a[rel=popover]").popover();
-    $(".tooltip").tooltip();
-    return $("a[rel=tooltip]").tooltip();
-  });
-
-}).call(this);
-:EF

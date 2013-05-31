@@ -1,7 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1365982283.464577:@value"Œ[I"/* line 1, ../../app/assets/stylesheets/_flash.scss */
-.flash-message {
-  display: block;
-  position: absolute;
-  top: 30px;
-}
-:EF

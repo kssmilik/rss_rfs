@@ -2,7 +2,7 @@ class ServicesController < ApplicationController
   include ServicesHelper
 
   before_filter :authenticate_user!, :except => [:create]
-  protect_from_forgery :except => :create
+  # protect_from_forgery :except => :create
   def index
     @services = current_user.services.order('provider asc')
   end

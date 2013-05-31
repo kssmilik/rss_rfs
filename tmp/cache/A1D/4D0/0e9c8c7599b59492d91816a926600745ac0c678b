@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1346005147.649696:@value"B[I"4html{
-    background-image: linear-gradient(left , rgb(182,209,201) 11%, rgb(211,227,235) 54%, rgb(227,235,162) 93%);
-    background-image: -o-linear-gradient(left , rgb(182,209,201) 11%, rgb(211,227,235) 54%, rgb(227,235,162) 93%);
-    background-image: -moz-linear-gradient(left , rgb(182,209,201) 11%, rgb(211,227,235) 54%, rgb(227,235,162) 93%);
-    background-image: -webkit-linear-gradient(left , rgb(182,209,201) 11%, rgb(211,227,235) 54%, rgb(227,235,162) 93%);
-    background-image: -ms-linear-gradient(left , rgb(182,209,201) 11%, rgb(211,227,235) 54%, rgb(227,235,162) 93%);
-
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        color-stop(0.11, rgb(182,209,201)),
-        color-stop(0.54, rgb(211,227,235)),
-        color-stop(0.93, rgb(227,235,162))
-    );
-}
-:EF

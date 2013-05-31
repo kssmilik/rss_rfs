@@ -17,3 +17,6 @@ public/static
 config/database.yml
 log/
 dump.rdb
+
+.gitignore
+.git/*

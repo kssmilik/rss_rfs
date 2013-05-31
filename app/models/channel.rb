@@ -8,7 +8,7 @@ class Channel < ActiveRecord::Base
   validates_http_url :url, :content_type => "xml"
 
   require 'feedzirra'
-  scope :favourite , where("favourite",true)
+  # scope :favourite , where("favourite",true)
 
 
   def set_name_form_link

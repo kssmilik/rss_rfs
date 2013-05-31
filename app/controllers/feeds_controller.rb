@@ -15,13 +15,8 @@ class FeedsController < ApplicationController
 
   def check_as_favourite
     @feed = Feed.find(params[:feed_id])
-    if @feed.favourite
-      @feed.favourite = false
-    else
-      @feed.favourite = true
-    end
-    @feed.save
-    redirect_to feed_path(@feed)
+    @feed.update_attribute(:likes, @feed.likes + 1)
+    redirect_to :back
   end
 
 end
